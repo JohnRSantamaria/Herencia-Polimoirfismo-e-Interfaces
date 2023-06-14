@@ -8,15 +8,16 @@ package com.mycompany.bytebank.heredado;
  *
  * @author ResetStoreX
  */
-public class testReferencias {
+public class TestCuenta {
     public static void main(String[] args) {
-        Funcionario funcionario = new Gerente();
-        funcionario.setNombre("Diego");
-       
-        Gerente gerente = new Gerente();
-        gerente.setNombre("ximena");
+        CuentaCorriente cc = new CuentaCorriente(1, 1);
+        CuentaAhorros ca  = new  CuentaAhorros(2, 3);
         
-        funcionario.setSalario(2000);
+        cc.deposita(2000);
+        cc.transfiere(1000, ca);
         
+        
+        System.out.println(cc.getSaldo());
+        System.out.println(ca.getSaldo());
     }
 }

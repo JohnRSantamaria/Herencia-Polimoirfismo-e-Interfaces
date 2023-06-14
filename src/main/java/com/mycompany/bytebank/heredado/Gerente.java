@@ -19,8 +19,13 @@ public class Gerente extends Funcionario {
         return this.clave.equals(clave);
     }
 
-
+    /**
+     *
+     * @return
+     */
+    @Override
     public double getBonificacion(){
+        System.out.println("Desde Gerente");
         return super.getSalario();        
     }
 }

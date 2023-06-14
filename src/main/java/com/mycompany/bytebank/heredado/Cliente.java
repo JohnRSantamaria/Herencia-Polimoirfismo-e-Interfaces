@@ -8,25 +8,11 @@ package com.mycompany.bytebank.heredado;
  *
  * @author ResetStoreX
  */
-public class Funcionario {
-    
+public class Cliente {
     private String nombre;
     private String documento;
-    private double salario;
-    private int tipo;
+    private String telefono;   
 
-    public int getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(int tipo) {
-        this.tipo = tipo;
-    }
-
-    public Funcionario(){
-        
-    }
-    
     public String getNombre() {
         return nombre;
     }
@@ -43,17 +29,12 @@ public class Funcionario {
         this.documento = documento;
     }
 
-    public double getSalario() {
-        return salario;
+    public String getTelefono() {
+        return telefono;
     }
 
-    public void setSalario(double salario) {
-        this.salario = salario;
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
     }
     
-    public double getBonificacion(){
-        System.out.println("Desde funcionario");
-        return this.salario * 0.05;
-    }
-        
 }

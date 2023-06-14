@@ -8,24 +8,23 @@ package com.mycompany.bytebank.heredado;
  *
  * @author ResetStoreX
  */
-public class Gerente extends Funcionario {
-    private String clave;
-    
-    public void setClave(String clave){
-        this.clave = clave;               
-    }
-    
-    public boolean iniciarSecion(String clave){
-        return this.clave.equals(clave);
-    }
+public class Gerente extends Funcionario implements Autenticable{
 
-    /**
-     *
-     * @return
-     */
+
     @Override
     public double getBonificacion(){
         System.out.println("Desde Gerente");
-        return super.getSalario();        
+        return super.getSalario() + this.getSalario() * 0.5;        
+    }
+
+
+    @Override
+    public void setClave(String clave) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public boolean iniciarSesion(String clave) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }

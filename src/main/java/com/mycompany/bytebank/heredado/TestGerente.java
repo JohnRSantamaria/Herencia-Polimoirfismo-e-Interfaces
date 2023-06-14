@@ -18,7 +18,7 @@ public class TestGerente {
         gerente.setTipo(1);
         
         System.out.println(gerente.getBonificacion());
-        System.out.println(gerente.iniciarSecion("alura"));
+        System.out.println(gerente.iniciarSesion("alura"));
     }
    
 }

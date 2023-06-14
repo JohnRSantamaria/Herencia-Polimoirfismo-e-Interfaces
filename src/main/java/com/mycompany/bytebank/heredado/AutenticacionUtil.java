@@ -8,16 +8,14 @@ package com.mycompany.bytebank.heredado;
  *
  * @author ResetStoreX
  */
-public class CuentaAhorros extends Cuenta{
-       
+public class AutenticacionUtil {
+    private String clave;
     
-    public CuentaAhorros(int agencia, int numero) {
-        super(agencia, numero);
+    public boolean inicarSesion(String clave){
+        return this.clave == clave;
     }
-
-    @Override
-    public void deposita(double valor) {
-        this.saldo = this.saldo + valor; 
+    
+    public void setClave(String clave){
+        this.clave = clave;
     }
-   
 }

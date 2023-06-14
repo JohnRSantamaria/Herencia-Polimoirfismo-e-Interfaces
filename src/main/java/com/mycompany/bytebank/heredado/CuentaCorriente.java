@@ -18,5 +18,10 @@ public class CuentaCorriente extends Cuenta {
         double comision = 0.2;
         
         return super.saca(valor + comision); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
-    }    
+    }        
+
+    @Override
+    public void deposita(double valor) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }

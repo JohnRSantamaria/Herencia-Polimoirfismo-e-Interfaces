@@ -8,14 +8,14 @@ package com.mycompany.bytebank.heredado;
  *
  * @author ResetStoreX
  */
-public class TestFuncionario {
+public class TestSistemaInterno {
     public static void main(String[] args) {
-        Funcionario diego = new Contador();
-        diego.setNombre("Diego");
-        diego.setDocumento("23423423");
-        diego.setSalario(2000);
-        
-        System.out.println(diego.getSalario());
-    System.out.println(diego.getBonificacion());
-    }
+     SistemaInterno sistema = new SistemaInterno();
+     Gerente gerente1 = new Gerente();
+     Administrador admin = new Administrador();
+     
+     sistema.autentica(gerente1);
+     sistema.autentica(admin);
+             
+    }            
 }

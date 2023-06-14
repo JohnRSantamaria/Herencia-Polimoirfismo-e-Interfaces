@@ -8,7 +8,7 @@ package com.mycompany.bytebank.heredado;
  *
  * @author ResetStoreX
  */
-public class Funcionario {
+public abstract class Funcionario {
     
     private String nombre;
     private String documento;
@@ -51,9 +51,10 @@ public class Funcionario {
         this.salario = salario;
     }
     
-    public double getBonificacion(){
-        System.out.println("Desde funcionario");
-        return this.salario * 0.05;
-    }
+    /**
+     *
+     * @return
+     */
+    public abstract double getBonificacion();
         
 }

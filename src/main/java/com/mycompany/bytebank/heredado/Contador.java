@@ -9,7 +9,7 @@ package com.mycompany.bytebank.heredado;
  * @author ResetStoreX
  */
 public class Contador extends Funcionario{  
-   
+       
     @Override
     public double getBonificacion() {
         System.out.println("Desde Contador");
